@@ -7,6 +7,7 @@ describe("contracts/anchors.json fleet", () => {
     expect(fleet.domains).toEqual([
       "testanchor.stellar.org",
       "cowrie.exchange",
+      "mint.zeam.money",
       "stellar.org",
       "lobstr.co",
       "blindpay.com",
@@ -15,6 +16,7 @@ describe("contracts/anchors.json fleet", () => {
     expect(fleet.anchors.map((a) => ({ domain: a.domain, kind: a.kind }))).toEqual([
       { domain: "testanchor.stellar.org", kind: "test" },
       { domain: "cowrie.exchange", kind: "offramp" },
+      { domain: "mint.zeam.money", kind: "offramp" },
       { domain: "stellar.org", kind: "other" },
       { domain: "lobstr.co", kind: "other" },
       { domain: "blindpay.com", kind: "other" },
